@@ -37,18 +37,22 @@ The system analyzes facial landmarks in real-time and generates alerts when fati
 ---
 
 ## Architecture
+
+```bash
 src/
- main.py
- app/
- config.py
- geometry.py
- detectors.py
- pose.py
- alarm.py
- logger.py
-└── run.py
+│── main.py
+└── app/
+    ├── config.py
+    ├── geometry.py
+    ├── detectors.py
+    ├── pose.py
+    ├── alarm.py
+    ├── logger.py
+    └── run.py
+
 config/
 └── config.yaml
+
 tests/
 └── test_geometry.py
 
@@ -57,6 +61,8 @@ tests/
 ## Installation
 
 Create virtual environment:
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
 
